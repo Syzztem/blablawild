@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">BlaBlaWild</string>
+    <string name="Search">Search an itinerary</string>
+    <string name="search_text">Search</string>
+    <string name="departure">Departure</string>
+    <string name="dest">Destination</string>
+    <string name="date">Date</string>
+    <string name="Hdep">Paris</string>
+    <string name="Hdes">Moscow</string>
+    <string name="Hdat">jj/mm/yy</string>
+    <string name="Results">Results</string>
+    <string name="DisplayErrorEmpty">Please fill both fields</string>
+</resources>
