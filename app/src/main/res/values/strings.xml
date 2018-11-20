@@ -7,7 +7,7 @@
     <string name="date">Date</string>
     <string name="Hdep">Paris</string>
     <string name="Hdes">Moscow</string>
-    <string name="Hdat">jj/mm/yy</string>
+    <string name="Hdat">dd/mm/yy</string>
     <string name="Results">Results</string>
     <string name="DisplayErrorEmpty">Please fill both fields</string>
 </resources>
