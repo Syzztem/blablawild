@@ -36,7 +36,7 @@ public class TripAdapter extends ArrayAdapter {
             date.setText(sdf.format(trip.getDate()));
             firstname.setText(trip.getFirstname());
             lastname.setText(trip.getLastname());
-            price.setText("" + trip.getPrice());
+            price.setText("$" + trip.getPrice());
         }
         return convertView;
     }
