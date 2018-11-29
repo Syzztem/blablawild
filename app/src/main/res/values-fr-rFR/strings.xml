@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Search">Rechercher un itinéraire</string>
+    <string name="search_text">Rechercher</string>
+    <string name="departure">Départ</string>
+    <string name="dest">Arrivée</string>
+    <string name="date">Date</string>
+    <string name="Hdep">Paris</string>
+    <string name="app_name" translatable="false">BlaBlaSauvage</string>
+    <string name="Hdes">Moscou</string>
+    <string name="Results">Résultats</string>
+    <string name="DisplayErrorEmpty">Merci de remplir les deux champs.</string>
+</resources>
