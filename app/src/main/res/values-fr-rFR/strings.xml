@@ -9,5 +9,5 @@
     <string name="app_name" translatable="false">BlaBlaSauvage</string>
     <string name="Hdes">Moscou</string>
     <string name="Results">Résultats</string>
-    <string name="DisplayErrorEmpty">Merci de remplir les deux champs.</string>
+    <string name="DisplayErrorEmpty">Merci de remplir les trois champs.</string>
 </resources>

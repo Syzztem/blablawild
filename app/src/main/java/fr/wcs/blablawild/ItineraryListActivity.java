@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -18,8 +19,9 @@ public class ItineraryListActivity extends AppCompatActivity {
         setContentView(R.layout.activity_itinerary_list);
 
         final Intent input = getIntent();
-        String       title = input.getStringExtra(ItinerarySearchActivity.EXTRA_MESSAGE);
-        setTitle(title);
+        SearchModel sm = input.getParcelableExtra(ItinerarySearchActivity.EXTRA_MESSAGE);
+        setTitle(sm.getDeparture() + " >> " + sm.getDestination());
+        Toast.makeText(this, sm.getDate(), Toast.LENGTH_SHORT).show();
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy-hh:mm", Locale.CANADA);
 
         ArrayList<TripModel> trips = new ArrayList<>();

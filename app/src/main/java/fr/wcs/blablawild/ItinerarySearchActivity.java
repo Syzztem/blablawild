@@ -18,7 +18,7 @@ import java.util.Locale;
 import static android.provider.AlarmClock.EXTRA_MESSAGE;
 
 public class ItinerarySearchActivity extends AppCompatActivity {
-    public static final String EXTRA_MESSAGE = "fr.wcs.blablawild.MESSAGE";
+    public static final String EXTRA_MESSAGE = "fr.wcs.blablawild.searchmodel";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,10 +55,11 @@ public class ItinerarySearchActivity extends AppCompatActivity {
                 String departure   = dep.getText().toString();
                 String destination = dest.getText().toString();
                 String date        = dat.getText().toString();
-                if(TextUtils.isEmpty(dep.getText().toString()) || TextUtils.isEmpty((dest.getText().toString())))
+                if(TextUtils.isEmpty(departure) || TextUtils.isEmpty((destination)) || TextUtils.isEmpty(date))
                     Toast.makeText(ItinerarySearchActivity.this,R.string.DisplayErrorEmpty, Toast.LENGTH_SHORT).show();
                 else {
-                    toItineraryList.putExtra(EXTRA_MESSAGE, departure + " - " + destination);
+                    SearchModel sm = new SearchModel(departure, destination, date);
+                    toItineraryList.putExtra(EXTRA_MESSAGE, sm);
                     startActivity(toItineraryList);
                 }
 
